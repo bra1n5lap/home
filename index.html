@@ -1,22 +1,24 @@
 <html>
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="notranslate">
-    <title>Home by Brainslap</title>
+    <title>Home by Brainslap!</title>
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.3.2/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.3.2/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.0.1/dist/cdn/material-dynamic-colors.min.js"></script>
   </head>
+
   <body class="light">
     <nav class="top responsive">
 
-      <a>
+      <a data-ui="#home">
         <i>home</i>
         <div>Home</div>
       </a>
-      <a>
+      <a data-ui="#grocery">
         <i>shopping_bag</i>
         <div>Grocery</div>
       </a>
@@ -29,12 +31,83 @@
         <div>More</div>
       </a>
     </nav>
-    
 
-    
+
+
     <main class="responsive">
-      <h3>Welcome</h3>
-      <h5>The beer is ready!</h5>
+
+      <div class="page" id="home">
+        <h3>Home</h3>
+        <h5>Made simpler by Brainslap!</h5>
+      </div>
+
+
+      <div class="page" id="grocery">
+        <h5>Grocery List</h5>
+        <hr>
+        <br>
+
+
+        <label class="checkbox">
+          <input type="checkbox">
+          <span>Maggie &#127836;</span>
+        </label>
+        <br>
+
+
+        <label class="checkbox">
+          <input type="checkbox">
+          <span>Dark Fantasy &#127850;</span>
+        </label>
+        <br>
+
+
+        <label class="checkbox">
+          <input type="checkbox">
+          <span>Soup &#127858;</span>
+        </label>
+        <br>
+
+
+
+        <label class="checkbox">
+          <input type="checkbox">
+          <span>Fruits &#127817;</span>
+        </label>
+        <br>
+
+        <label class="checkbox">
+          <input type="checkbox">
+          <span>Veggies &#127798;</span>
+        </label>
+        <br>
+
+        <label class="checkbox">
+          <input type="checkbox">
+          <span>Milk &#129371;</span>
+        </label>
+        <br>
+
+
+        <label class="checkbox">
+          <input type="checkbox">
+          <span>Cooking Oil</span>
+        </label>
+        <br>
+
+
+        <label class="checkbox">
+          <input type="checkbox">
+          <span>Tea &#9749;</span>
+        </label>
+        <br>
+
+
+      </div>
+
+
+
     </main>
   </body>
+
 </html>
