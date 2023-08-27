@@ -9,6 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.3.2/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.3.2/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.0.1/dist/cdn/material-dynamic-colors.min.js"></script>
+
+    <style>
+      input[type=checkbox]:checked+span {
+        text-decoration: line-through;
+      }
+
+    </style>
+
+
+
   </head>
 
   <body class="light">
@@ -39,6 +49,9 @@
       <div class="page" id="home">
         <h3>Home</h3>
         <h5>Made simpler by Brainslap!</h5>
+
+
+
       </div>
 
 
@@ -47,67 +60,43 @@
         <hr>
         <br>
 
-
-        <label class="checkbox">
-          <input type="checkbox">
-          <span>Maggie &#127836;</span>
-        </label>
-        <br>
-
-
-        <label class="checkbox">
-          <input type="checkbox">
-          <span>Dark Fantasy &#127850;</span>
-        </label>
-        <br>
-
-
-        <label class="checkbox">
-          <input type="checkbox">
-          <span>Soup &#127858;</span>
-        </label>
-        <br>
-
-
-
-        <label class="checkbox">
-          <input type="checkbox">
-          <span>Fruits &#127817;</span>
-        </label>
-        <br>
-
-        <label class="checkbox">
-          <input type="checkbox">
-          <span>Veggies &#127798;</span>
-        </label>
-        <br>
-
-        <label class="checkbox">
-          <input type="checkbox">
-          <span>Milk &#129371;</span>
-        </label>
-        <br>
-
-
-        <label class="checkbox">
-          <input type="checkbox">
-          <span>Cooking Oil</span>
-        </label>
-        <br>
-
-
-        <label class="checkbox">
-          <input type="checkbox">
-          <span>Tea &#9749;</span>
-        </label>
-        <br>
-
-
       </div>
 
 
 
     </main>
+
+<script>
+
+
+var item = `<div class=" no-wrap padding elevate">
+          <label class="checkbox large-width">
+            <input type="checkbox" class="max">
+            <span> $$$ </span>
+          </label>
+          <i class="tiny-padding"><a href="https://jiomart.com/search/$$$" target="_blank"><img class="responsive" src="https://www.jiomart.com/assets/ds2web/jds-icons/jiomart-logo-icon.svg"></a></i>
+          <i class="tiny-padding"><a href="https://blinkit.com/s/?q=$$$" target="_blank"><img class="responsive" src="https://blinkit.com/b2883e27628aeafe2342.svg"></a></i>
+          <i class="tiny-padding"><a href="https://www.bigbasket.com/ps/?q=$$$" target="_blank"><img class="responsive" src="https://www.bbassets.com/static/v2693/uiv2/images/apple-touch-icon-precomposed.png"></a></i>
+        </div>
+
+`;
+
+var item_list = ['Maggie', 'Milk', 'Fruits', 'Vegetables', 'Tea', 'Oil', 'Biscuit', 'Pet Food', 'Paape', 'Rusk', 'Bakery'];
+
+for (i = 0; i < item_list.length; i++) {
+  document.getElementById('grocery').innerHTML += item.replaceAll('$$$', item_list[i]);
+
+}
+
+
+
+
+</script>
+
+
+
+
+
   </body>
 
 </html>
